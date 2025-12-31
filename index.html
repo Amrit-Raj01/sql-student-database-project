@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Database SQL Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Database Management System</h1>
+    <p>SQL Project using MySQL</p>
+</header>
+
+<section>
+    <h2>Project Overview</h2>
+    <p>
+        This project demonstrates a Student Database Management System designed using MySQL.
+        It manages students, courses, and enrollment data and performs real-world academic analysis.
+    </p>
+</section>
+
+<section>
+    <h2>Database Tables</h2>
+    <ul>
+        <li>Students</li>
+        <li>Courses</li>
+        <li>Enrollments</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Sample SQL Query</h2>
+    <pre>
+SELECT s.name
+FROM students s
+JOIN enrollments e ON s.student_id = e.student_id
+WHERE e.marks &lt; 40
+GROUP BY s.name
+HAVING COUNT(*) &gt; 2;
+    </pre>
+</section>
+
+<section>
+    <h2>Technologies Used</h2>
+    <ul>
+        <li>MySQL</li>
+        <li>SQL</li>
+        <li>HTML & CSS</li>
+    </ul>
+</section>
+
+<section>
+    <h2>GitHub Repository</h2>
+    <p>
+        <a href="https://github.com/YourGitHubUsername/sql-student-database-project" target="_blank">
+            View Project on GitHub
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>Created by Amrit Raj</p>
+</footer>
+
+</body>
+</html>
